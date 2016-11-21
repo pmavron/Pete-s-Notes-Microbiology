@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarInfoView" customModule="Bugs___Drugs" customModuleProvider="target">
+            <connections>
+                <outlet property="carInfoImageView" destination="vAQ-e1-C7f" id="bJT-yv-PBl"/>
+                <outlet property="carNameLabel" destination="T2w-dK-OuQ" id="j5o-uI-QF8"/>
+                <outlet property="carPriceLabel" destination="Zjv-jl-ogD" id="mPY-pU-bbh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vAQ-e1-C7f">
+                    <rect key="frame" x="8" y="8" width="84" height="84"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="84" id="EBq-rj-F1y"/>
+                        <constraint firstAttribute="width" constant="84" id="vlo-yJ-VDD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Species" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2w-dK-OuQ">
+                    <rect key="frame" x="194" y="11" width="382" height="21"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Species:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDi-Nv-1eV">
+                    <rect key="frame" x="110" y="10" width="76" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="3Bd-j7-FdU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rx" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjv-jl-ogD">
+                    <rect key="frame" x="160" y="39" width="416" height="21"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rx:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qH-JL-TGO">
+                    <rect key="frame" x="110" y="40" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="urE-xK-xHM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="T2w-dK-OuQ" firstAttribute="baseline" secondItem="yDi-Nv-1eV" secondAttribute="baseline" id="4r6-F4-fzm"/>
+                <constraint firstItem="3qH-JL-TGO" firstAttribute="top" secondItem="yDi-Nv-1eV" secondAttribute="bottom" constant="9" id="6Ef-Ri-Gwg"/>
+                <constraint firstAttribute="trailing" secondItem="T2w-dK-OuQ" secondAttribute="trailing" constant="24" id="BaR-3F-hyZ"/>
+                <constraint firstItem="Zjv-jl-ogD" firstAttribute="firstBaseline" secondItem="3qH-JL-TGO" secondAttribute="firstBaseline" id="FtW-Dg-evf"/>
+                <constraint firstAttribute="bottom" secondItem="vAQ-e1-C7f" secondAttribute="bottom" constant="8" id="KuF-Xu-mn4"/>
+                <constraint firstItem="3qH-JL-TGO" firstAttribute="leading" secondItem="vAQ-e1-C7f" secondAttribute="trailing" constant="18" id="Kyu-KD-5WO"/>
+                <constraint firstItem="Zjv-jl-ogD" firstAttribute="leading" secondItem="3qH-JL-TGO" secondAttribute="trailing" constant="8" symbolic="YES" id="L1i-hR-daC"/>
+                <constraint firstItem="3qH-JL-TGO" firstAttribute="centerY" secondItem="vAQ-e1-C7f" secondAttribute="centerY" id="Nm1-X2-tze"/>
+                <constraint firstItem="Zjv-jl-ogD" firstAttribute="trailing" secondItem="T2w-dK-OuQ" secondAttribute="trailing" id="PKR-B9-eyp"/>
+                <constraint firstItem="yDi-Nv-1eV" firstAttribute="leading" secondItem="3qH-JL-TGO" secondAttribute="leading" id="YrT-Kh-crH"/>
+                <constraint firstItem="Zjv-jl-ogD" firstAttribute="centerY" secondItem="vAQ-e1-C7f" secondAttribute="centerY" id="ggK-sX-wVn"/>
+                <constraint firstItem="T2w-dK-OuQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="iah-dQ-2Zl"/>
+                <constraint firstItem="vAQ-e1-C7f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="kDc-hR-i4f"/>
+                <constraint firstItem="T2w-dK-OuQ" firstAttribute="leading" secondItem="yDi-Nv-1eV" secondAttribute="trailing" constant="8" symbolic="YES" id="oe8-ha-Lpa"/>
+                <constraint firstItem="vAQ-e1-C7f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="tUQ-fh-Vso"/>
+                <constraint firstItem="yDi-Nv-1eV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="w5I-Oh-lzk"/>
+                <constraint firstAttribute="bottom" secondItem="3qH-JL-TGO" secondAttribute="bottom" constant="39" id="wPv-WL-h45"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="217" y="105"/>
+        </view>
+    </objects>
+</document>
